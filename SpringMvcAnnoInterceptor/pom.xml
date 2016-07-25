@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<springversion>3.1.1.RELEASE</springversion>
+		<springversion>4.1.5.RELEASE</springversion>
 		<junitversion>3.8.1</junitversion>
 	</properties>
 	<dependencies>
@@ -20,13 +20,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
-			<version>${springversion}</version>
-			<type>jar</type>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-asm</artifactId>
 			<version>${springversion}</version>
 			<type>jar</type>
 			<scope>compile</scope>

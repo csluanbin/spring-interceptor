@@ -13,7 +13,7 @@ public class ScanClassImpl implements ScanClass{
 	@Override
 	public void scan(String packageName, final boolean recursive, Set<Class<?>> classes, ClassFilter filter) {
 		String relativelyPath=Thread.currentThread().getContextClassLoader().getResource("").getPath();
-		String packagePath=relativelyPath+packageName.replace(".", "\\");
+		String packagePath=relativelyPath+packageName.replace(".", "/");
 		File dir = new File(packagePath);
 		if (!dir.exists() || !dir.isDirectory()) {  
             return;
