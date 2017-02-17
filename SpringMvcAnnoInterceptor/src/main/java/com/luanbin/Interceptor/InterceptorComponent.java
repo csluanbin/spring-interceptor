@@ -44,14 +44,11 @@ public class InterceptorComponent implements Comparable{
 	@Override
 	public int compareTo(Object o) {
 		InterceptorComponent interceptor=(InterceptorComponent)o;
-		if(this.order>interceptor.getOrder())
-		{
+		if(this.order>interceptor.getOrder()) {
 			return 1;
 		}
-		else
-		{
-			if(this.order<interceptor.getOrder())
-			{
+		else {
+			if(this.order<interceptor.getOrder()) {
 				return -1;
 			}
 		}

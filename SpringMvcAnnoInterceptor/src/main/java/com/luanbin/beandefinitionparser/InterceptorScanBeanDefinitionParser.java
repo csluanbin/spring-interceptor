@@ -66,9 +66,9 @@ public class InterceptorScanBeanDefinitionParser implements BeanDefinitionParser
         	parserContext.registerComponent(beandefinition);
         }
         return null;
-    } 
-    private BeanComponentDefinition assemble(InterceptorComponent component, ParserContext parserContext)
-    {
+    }
+    
+    private BeanComponentDefinition assemble(InterceptorComponent component, ParserContext parserContext) {
     	RootBeanDefinition beanDefinition = new RootBeanDefinition(MappedInterceptor.class);
         beanDefinition.setSource(null);
         beanDefinition.setRole(BeanDefinition.ROLE_INFRASTRUCTURE);
